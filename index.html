@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Battle City MD Map Editor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<img id="blocks" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAIBAMAAABNBWF0AAAAMFBMVEUAAACtra1jY2NCQv+M1gD///+cSgAAUghrCAC17+8ISgAAAAAAAAAAAAAAAAAAAABad9S2AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAh0lEQVQI10WNsQnFMAxEXQR+rYAHcCr3qtylUOXuG7KCJxAYMoF6rxDImv/s4vtAIO5xd85BZtEIYk78ae8ZfPDDd7XGCn9nqD2q+MsC13X0AZoKkQ8THNAAiTu/mvVLhSaIZjYAp8QtS/5vxFpn1di4VQSBsgDqEoBIFgTWxo7DRN+ynAjQD1tyJunDT6lUAAAAAElFTkSuQmCC"
+  alt="" style="display: none;" />
+<img id="base" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEUAAAFjY2NrCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADK8gURAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAQ0lEQVQI10WNwQ0AQQgCsQOwA/tv8tAsOR9IHCJARllFiKf2c5qjpKIFaKsGRiO1kdn0kg1dxMxh3tdiWlKj5zaDfz5I5wRRTypQtQAAAABJRU5ErkJggg=="
+  alt="" style="display: none;" />
+
+<div>
+  <canvas id="map"></canvas>
+  <div style="position: absolute; display: inline;">
+    <div class="myblock">
+      <input type="checkbox" id="ccode">
+      <label for="ccode">C-code format</label>
+    </div>
+    <div class="myblock">
+      <label for="hexdata" style="display: block;">Hex Data (NES)</label>
+      <textarea id="hexdata" cols="48" rows="5"></textarea>
+    </div>
+    <div class="myblock">
+      <label for="hexdataMD" style="display: block;">Hex Data (MD 1.08-17)</label>
+      <textarea id="hexdataMD" cols="48" rows="5"></textarea>
+    </div>
+    <div>
+      <div class="myblock" style="float: left;">
+        <label for="presets" style="display: block;">Load Preset</label>
+        <select id="presets" name="maps" size="16">
+        </select>
+      </div>
+      <div class="myblock">
+        <label for="yourmaps" style="display: block;">Your Maps</label>
+        <select id="yourmaps" name="maps" size="16">
+          <option>Default</option>
+        </select>
+      </div>
+      <div class="myblock">
+        <div>Edit Battle City MD</div>
+        <input type="file" id="input">
+        <input type="button" id="saverom" value="Save ROM" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bottombar">
+  <input type="button" id="increasecanvas" value="Zoom +" />
+  <input type="button" id="decreasecanvas" value="Zoom -" />
+</div>
+
+<script src="js/index.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {margin:0;}
+
+.bottombar {
+  overflow: hidden;
+  background-color: rgb(221, 221, 221);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 8px;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+}
+
+.myblock {
+  padding: 8px;
+}
+
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#ccode {
+  margin: 0px;
+}
